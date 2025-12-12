@@ -1,6 +1,7 @@
 # Todo-collab
 
-A collaborative todo application built with React and Vite. It supports user login, multiple todo lists with tasks and subtasks, tags/categories, theme switching (light/dark mode), real-time collaboration with online users, and activity logs that update for all users.
+A collaborative todo application built with React and Vite.  
+Features include user login/logout, multiple todo lists with tasks and subtasks, tags/categories, light/dark theme toggle, real-time collaboration showing online users and activity logs.
 
 ---
 
@@ -11,33 +12,36 @@ A collaborative todo application built with React and Vite. It supports user log
 - Tasks can have tags/categories
 - Toggle task completion
 - Edit and delete tasks and lists
-- Real-time collaboration showing online users and activity logs
+- Real-time collaboration with online users and activity logs
 - Light and dark theme toggle
 - Responsive and clean UI
 
 ---
 
-## Project Structure
-
-- `public/` - Static assets like images
-- `src/` - React source code including components, contexts, and styles
-- `package.json` - Project dependencies and scripts
-- `vite.config.js` - Vite configuration
-- `.gitignore` - Files/folders ignored by Git
-
----
-
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 16 or later recommended)
-- npm (comes with Node.js)
+Before running this project, make sure you have installed:
+
+- **Node.js** (version 16 or later recommended)  
+  Download from [https://nodejs.org/](https://nodejs.org/)  
+  This will also install `npm` (Node Package Manager).
 
 ---
 
 ## Setup and Run
 
+Follow these steps to run the project locally:
+
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/vinay-nethala/Todo-collab.git
-cd Todo-collab
+   ```bash
+   git clone https://github.com/vinay-nethala/Todo-collab.git
+   cd Todo-collab
+2. **Install dependencies**
+    npm install
+   
+3.**Start the development server**
+    npm run dev
+4 **Open the app in your browser**
+    Open http://localhost:5173/
+ (or the URL shown in your terminal) to view the app.
