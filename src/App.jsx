@@ -17,27 +17,24 @@ export default function App() {
     }
   }, [user, joinCollaboration, leaveCollaboration]);
 
-  // 🌞 Light Theme
   const lightTheme = {
     background: "linear-gradient(to bottom right, #ffffff, #f3f3f3)",
     color: "#222",
   };
 
-  // 🌙 Dark Theme
   const darkTheme = {
     background: "linear-gradient(to bottom right, #111, #333)",
     color: "white",
   };
 
-  // 🔘 Button styles (smaller & clean)
   const buttonStyle = {
-    padding: "6px 12px",
-    borderRadius: "8px",
+    padding: "10px 18px",
+    borderRadius: "10px",
     border: "none",
     cursor: "pointer",
-    fontSize: "14px",
-    fontWeight: "600",
-    transition: "0.2s",
+    fontSize: "16px",
+    fontWeight: "bold",
+    transition: "0.3s",
   };
 
   const lightButton = {
@@ -56,53 +53,40 @@ export default function App() {
     <div
       style={{
         minHeight: "100vh",
-        padding: "16px",
+        padding: "20px",
         transition: "0.3s",
         ...(theme === "dark" ? darkTheme : lightTheme),
       }}
     >
-      {/* HEADER */}
+      {/* Header */}
       <div
         style={{
-          padding: "10px 16px",
-          borderRadius: "10px",
-          marginBottom: "16px",
+          padding: "15px 25px",
+          borderRadius: "15px",
+          marginBottom: "20px",
           display: "flex",
-          flexWrap: "wrap",      // ✅ responsive
-          gap: "10px",
           justifyContent: "space-between",
           alignItems: "center",
-          background:
-            theme === "dark"
-              ? "rgba(30,30,30,0.85)"
-              : "rgba(255,255,255,0.85)",
-          backdropFilter: "blur(8px)",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+          background: theme === "dark" ? "rgba(40,40,40,0.7)" : "rgba(255,255,255,0.7)",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
         }}
       >
-        <h1
-          style={{
-            margin: 0,
-            fontSize: "18px",    // 🔽 smaller title
-            fontWeight: "700",
-          }}
-        >
-          ✨ Collaborative Todo App
-        </h1>
+        <h1 style={{ margin: 0 }}>✨ Collaborative Todo App</h1>
 
         <button
           onClick={toggleTheme}
           style={theme === "dark" ? darkButton : lightButton}
         >
-          {theme === "dark" ? "🌞 Light" : "🌙 Dark"}
+          {theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
         </button>
       </div>
 
-      {/* MAIN CONTENT */}
+      {/* Page Content */}
       {user ? (
         <TodoLists />
       ) : (
-        <div style={{ paddingTop: "30px" }}>
+        <div style={{ paddingTop: "40px" }}>
           <LoginForm />
         </div>
       )}
