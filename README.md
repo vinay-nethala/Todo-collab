@@ -36,6 +36,7 @@ Follow these steps to run the project locally:
 
    ```bash
    git clone https://github.com/vinay-nethala/Todo-collab.git
+   
    cd Todo-collab
 2. **Install dependencies**
    ``` bash
@@ -45,7 +46,7 @@ Follow these steps to run the project locally:
    
 3.**Start the development server**
     
-    -npm run dev 
+    npm run dev 
 ---
 4  **Open the app in your browser**
 
